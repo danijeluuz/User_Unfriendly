@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>User Unfriendly</title>
+	<style type="text/css">
+		html {
+			height:100vh;
+		}
+
+		body{
+			margin: 2em 3em;
+			padding:0;
+		}
+		
+		canvas {
+			display:block;
+			width:100vw;
+			height:100vh;
+		}
+
+		.griglia {
+			max-width: 700px;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-column-gap: 1em;
+			grid-row-gap: 1em;
+			margin-bottom: 1em;
+		}
+		.cella {
+			background-color: lightblue;
+			/*outline: 1px red solid;*/
+			min-height: 10em;
+		}
+
+		.cella img {
+			width:100%;
+		}
+
+		.doppia {
+			 grid-column: span 2;
+		}
+		.tripla {
+			 grid-column: span 3;
+		}
+		.quadrupla {
+			 grid-column: span 4;
+		}
+
+		p {
+			margin:0;
+		}
+		h1 {
+			font-size: inherit;
+			font-weight: 700;
+			/*margin: 0;*/
+		}
+
+		@media (max-width:600px) {
+
+			.griglia {
+				max-width: initial;
+				display: block;
+			}
+			.cella {
+				margin-bottom: 1em;
+			}
+
+		}
+
+	</style>
+
+	
+</head>
+
+<body class="disable-select disable-scroll">
+
+		<!--
+		embed dello script: copiate l'ultima versione da qui:
+		https://cdnjs.com/libraries/p5.js
+	-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js" integrity="sha512-b/htz6gIyFi3dwSoZ0Uv3cuv3Ony7EeKkacgrcVg8CMzu90n777qveu0PBcbZUA7TzyENGtU+qZRuFAkfqgyoQ==" crossorigin="anonymous"></script>
+	<!--
+		link al vostro file
+	-->
+	<script src="main.js"></script>
+	
+
+	<div class="griglia">
+		<div class="cella">
+			<h1>Cella 1</h1>
+		</div>
+		<div class="cella">Cella 2</div>
+		<div class="cella">Cella 3</div>
+		<div class="cella">Cella 4</div>
+
+		<div class="cella doppia">
+			<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			</p>
+		</div>
+		<div class="cella doppia">Cella 2</div>
+
+		<div class="cella">Cella 1</div>
+		<div class="cella tripla">Cella 2</div>
+
+		<div class="cella">Cella 1</div>
+		<div class="cella">Cella 2</div>
+		<div class="cella">Cella 3</div>
+		<div class="cella">Cella 4</div>
+
+		<div class="cella doppia">Cella 1</div>
+		<div class="cella">
+			<img src="https://www.askideas.com/media/24/Cute-Tabby-Siberian-Kitten.jpg">
+			Ciao gattino!<br>
+			Ma anche ciao a tutti!
+		</div>
+		<div class="cella"></div>
+
+
+		<div class="cella">Cella 1</div>
+		<div class="cella">
+			<img src="https://www.askideas.com/media/24/Cute-Tabby-Siberian-Kitten.jpg">
+			Ciao gattino!<br>
+			Ma anche ciao a tutti!
+		</div>
+		<div class="cella"></div>
+		<div class="cella">
+			<img src="https://www.askideas.com/media/24/Cute-Tabby-Siberian-Kitten.jpg">
+			Ciao gattino!<br>
+			Ma anche ciao a tutti!
+		</div>
+
+
+		<div class="cella quadrupla">Cella 1</div>
+	</div>
+
+
+
+</body>
+
+
+</html>
