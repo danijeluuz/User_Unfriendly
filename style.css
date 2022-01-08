@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.controls {
+  display: grid;
+}
+
+
+html {
+  height:100vh;
+}
+
+body{
+  margin: 0;
+  padding:0em;
+  font-family: 'Poppins', sans-serif;
+}
+
+canvas {
+  display:block;
+  width:100vw;
+  height:100vh;
+}
+
+.next{
+  text-decoration: none;
+  width: 85%;
+  position:absolute;
+  top:85%;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  font-size: 2em;
+  line-height: 1.1em;
+  font-weight: 500;
+  text-align: right;
+  color: black;
+}
+
+.introduzione{
+  width: 85%;
+  position:absolute;
+  top:50vh;
+  left:0;
+  right:0;
+  bottom:0%;
+  margin:auto;
+  color: #FF2600;
+  font-size: 2em;
+  line-height: 1.1em;
+  font-weight: 400;
+}
+
+.center_image{
+  width: 85%;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:50%;
+  margin:auto;
+ /* filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg)*/
+
+}
+
+.griglia {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  margin-bottom: 1em;
+
+}
+.cella {
+  background-color: lightblue;
+  /*outline: 1px red solid;*/
+  min-height: 10em;
+}
+
+.cella img {
+  width:100%;
+}
+
+.doppia {
+   grid-column: span 2;
+}
+.tripla {
+   grid-column: span 3;
+}
+.quadrupla {
+   grid-column: span 4;
+}
+
+p {
+  margin:0;
+}
+h1 {
+  font-size: inherit;
+  font-weight: 700;
+  /*margin: 0;*/
+}
+
+@media (max-width:600px) {
+
+  .griglia {
+    max-width: initial;
+    display: block;
+  }
+  .cella {
+    margin-bottom: 1em;
+  }
+
+}
