@@ -4,8 +4,9 @@ let lines = 40;
 
 // Creiamo un canvas grande quanto la finestra
 function setup(){
+	noCursor();
+	
 	createCanvas(windowWidth, windowHeight)
-	background('white')
 
 	canvas = createCanvas(windowWidth, windowHeight);
 
@@ -30,6 +31,35 @@ function setup(){
 }
 
 function draw(){
+
+
+	randomSeed(0); // remove to make random values recalculate often
+
+
+  	var mouseLine = map(mouseX, 0, width, 0, 255);
+	  console.log(mouseLine);
+	// background
+	background(45, 223, 255);
+  
+	// lines in a loop
+	for (var i = 0; i < mouseLine; i++) {
+	  push();
+	  translate(width / 2, height / 2);
+	  rotate(radians((i * 360) / mouseLine+ (frameCount/3 % 360)));
+	  stroke(0);
+	  strokeWeight(25);
+	  line(0, 0, width, width);
+	  pop();
+	}
+  
+	/* random circles
+	for (var i = 0; i < slider.value(); i++) {
+	  fill(0);
+	  noStroke();
+	  circle(random(width), random(height), random(1, 10));
+	}
+
+	
 	stroke(0)
 	strokeWeight(1)
 	fill(255,38,0)
@@ -40,33 +70,14 @@ function draw(){
 	if (mouseIsPressed){
 		line(mouseX, mouseY, pmouseX, pmouseY)
 	}
+	*/
+  noStroke()
+  fill("#2DDFFF")
+  ellipse(mouseX, mouseY, 25, 25);
 
-	randomSeed(0); // remove to make random values recalculate often
-
-	let mouseColor = (mouseX / width) * 255;
-  	let mouseLine = (mouseX / 2.75)
-	// background
-	background(255, 38, 0);
-  
-	// lines in a loop
-	for (var i = 0; i < mouseLine; i++) {
-	  push();
-	  translate(width / 2, height / 2);
-	  rotate(radians((i * 360) / mouseLine+ (frameCount % 360)));
-	  stroke(0);
-	  strokeWeight(10);
-	  line(0, 0, width, width);
-	  pop();
-	}
-  
-	/* random circles
-	for (var i = 0; i < slider.value(); i++) {
-	  fill(0);
-	  noStroke();
-	  circle(random(width), random(height), random(1, 10));
-	}*/
 
 }
+
 
 
 // change the input text to the title
