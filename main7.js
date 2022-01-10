@@ -60,7 +60,7 @@ $( "#menu-btn" ).click(function() {
 	   
 	   fill("#2DDFFF");
 	   noStroke();
-	   ellipse(x, y, mouseX/10, mouseY/1000);
+	   ellipse(x, y, mouseX/200, mouseY/200);
 	 }
 	 
 

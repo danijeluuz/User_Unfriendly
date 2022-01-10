@@ -61,7 +61,7 @@ body{
   top:150px;
   left:0;
   right:0;
-  bottom:60%;
+  bottom:0%;
   margin:auto;
   z-index: 0;
 }
@@ -146,7 +146,6 @@ nav {
   top:150px;
   left:0;
   right:0;
-  bottom:60%;
   margin:auto;
   z-index: 0;
   text-align: left;
@@ -205,7 +204,7 @@ nav {
   text-align: right;
   width: 35%;
   position:absolute;
-  top:0px;
+  top:10px;
   left:100;
   right:0;
   bottom:0%;
@@ -220,7 +219,7 @@ nav {
   text-align: right;
   width: 35%;
   position:absolute;
-  top:0px;
+  top:10px;
   left:45%;
   right:0px;
   bottom:0%;
@@ -242,7 +241,7 @@ nav {
   margin:0;
   color: #000000;
   font-size: 1em;
-  line-height: 0.6em;
+  line-height: 1.1em;
   font-weight: 400;
 }
 
