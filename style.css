@@ -437,6 +437,7 @@ nav ul.menu {
   position: relative;
   display: block;
   padding: 25px;
+  margin-left: 50px;
   list-style: none;
   font-size: 3em;
 }
