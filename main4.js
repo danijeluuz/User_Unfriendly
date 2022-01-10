@@ -1,8 +1,3 @@
-let canvas;
-let title = "";
-let lines = 40;
-
-
 //gestione evento click menu
 $( "#menu-btn" ).click(function() {
   
@@ -48,7 +43,7 @@ function modelReady() {
 function draw() {
 
 
-  background("#2DDFFF");
+  background(45,223,255);
   noStroke()
   fill(0)
   ellipse(mouseX, mouseY, 25, 25);
@@ -85,7 +80,7 @@ function drawKeypoints() {
       if (keypoint.score > 0) {
         if (keypoint.part == "nose") {
         fill("red")
-        ellipse(keypoint.position.x, keypoint.position.y, 100, 100);      
+        ellipse(keypoint.position.x, keypoint.position.y, 70, 70);      
    }
         noStroke();
       }

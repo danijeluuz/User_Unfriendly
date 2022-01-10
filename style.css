@@ -38,7 +38,7 @@ body{
   font-family: 'Poppins', sans-serif;
   font-size:2em;
   line-height: 1.1em;
-  color: #1fddff;
+  color: #21d8f8;
   margin: 0;
   width: 90%;
   position:absolute;
@@ -65,8 +65,28 @@ body{
   margin:auto;
   z-index: 0;
 }
+
+.testoPagine5{
+  font-family: 'Poppins', sans-serif;
+  font-size:2em;
+  line-height: 1.1em;
+  color: #000000;
+  margin: 0;
+  width: 90%;
+  position:absolute;
+  top:150px;
+  left:0;
+  right:0;
+  bottom:60%;
+  margin:auto;
+  z-index: 0;
+}
 .testoPagine1::selection {
   background: #F22B07; /* WebKit/Blink Browsers */
+}
+
+.testoPagine5::selection {
+  background: #020202; /* WebKit/Blink Browsers */
 }
 
 .demo::selection {
@@ -77,6 +97,7 @@ nav {
   background-color: rgba(0, 0, 0);
   width: 100%;
   position: fixed;
+  
 }
 
 .flex{
@@ -129,6 +150,27 @@ nav {
   margin:auto;
   z-index: 0;
   text-align: left;
+}
+
+.random{
+  text-decoration: none;
+  background-color: #2DDFFF;
+  border: none;
+  font-size: 6em;
+  font-weight: 400;
+  cursor: none;
+}
+
+.random_button{
+
+  text-decoration: none;
+  background-color: #000000;
+  color: #2DDFFF;
+  padding: 10px;
+  border: none;
+  font-size: 1em;
+  font-weight: 400;
+  cursor: none;
 }
 
 .timer{
@@ -206,6 +248,15 @@ nav {
 
 
 
+.nav_img{
+  width: 25px;
+  top:0px;
+  left:0;
+  right:90%;
+  bottom:0;
+  margin:auto;
+  
+}
 
 .center_image2{
   width: 75%;
@@ -386,7 +437,7 @@ nav {
 nav ul.menu {
   position: relative;
   display: block;
-  
+  padding: 25px;
   list-style: none;
   font-size: 3em;
 }
@@ -402,6 +453,7 @@ nav a {
   text-decoration: none;
   display: block;
   cursor: none;
+
 }
 
 nav ul.menu{
@@ -421,8 +473,10 @@ nav ul.menu{
 }
 
 nav a:hover{
-  padding-left: 120%;
+
   transition: all ease-in-out 0.2s;
+  padding-left: 105%;
+
 }
 
 
