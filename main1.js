@@ -18,9 +18,7 @@ $( "#menu-btn" ).click(function() {
 function setup(){
 	noCursor();
 	
-	createCanvas(windowWidth, windowHeight)
 
-	canvas = createCanvas(windowWidth, windowHeight);
 
 	// div to contain the controllers
 	//div.position(10, 10);
@@ -41,6 +39,10 @@ function setup(){
 }
 
 function draw(){
+
+	createCanvas(windowWidth, windowHeight)
+
+	canvas = createCanvas(windowWidth, windowHeight);
 
 	background(45, 223, 255);
 	/* lines in a loop

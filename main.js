@@ -5,10 +5,6 @@ let lines = 40;
 // Creiamo un canvas grande quanto la finestra
 function setup(){
 	noCursor();
-	
-	createCanvas(windowWidth, windowHeight)
-
-	canvas = createCanvas(windowWidth, windowHeight);
 
 	// div to contain the controllers
 	let div = createDiv();
@@ -31,6 +27,10 @@ function setup(){
 }
 
 function draw(){
+	
+	createCanvas(windowWidth, windowHeight)
+
+	canvas = createCanvas(windowWidth, windowHeight);
 
 
 	randomSeed(0); // remove to make random values recalculate often

@@ -25,49 +25,120 @@
 </head>
 
 <body>
+	<div class="cursore"></div>
 	<nav style="z-index: 1;">
 		<div class="flex">
 			<div id="menu-btn">
 				
-				<div class="righetta1"><img src="img/UN.svg"  class="center_image1" alt=""></div>
+			<div class="righetta1">
+					<img src="img/UN.svg"  class="center_image1" alt="">
+				</div>
 			</div>
 
 			<div class="testoNav">11.1</div>
 
 			<div id="menu-btn1">
-				<div class="righetta2"><img src="img/arrow_back.svg"  class="center_image1" alt=""></div>
+				<div class="righetta2">
+					<a href="/page3.html" style="cursor: none; width: 10px;">
+						<img src="img/arrow_back.svg"  class="center_image2" alt="">
+					</a>
+				</div>
 			</div>
 
 			<div id="menu-btn2">
-				<div class="righetta2"><img src="img/arrow_back.svg"  class="center_image1" alt=""></div>
+				<div class="righetta2">
+					<a href="/page1.html"  style="cursor: none; width: 10px">
+						<img src="img/arrow_forward.svg"  class="center_image2" alt="">
+					</a>
+				</div>
 			</div>
 		</div>
 
 		<ul class="menu">
-		  <li><a href="#">Lorem</a></li>
-		  <li><a href="#">Ipsum</a></li>
-		  <li><a href="#">Dolor</a></li>
-		  <li><a href="#">Sit amet</a></li>
-		  <li><a href="#">Consectet</a></li>
-		  <li><a href="#">Adipiscing</a></li>
-		  <li><a href="#">Elit sed</a></li>
+		  <li><a href="#">1</a></li>
+		  <li><a href="#">11.1</a></li>
+		  <li><a href="#">1.111</a></li>
+		  <li><a href="#">111.1</a></li>
+		  <li><a href="#">11.11</a></li>
+		  <li><a href="#">1111.1</a></li>
+		  <li><a href="#">1.111</a></li>
 		</ul>
-	  </nav>
+	</nav>
 
 	<main>
-		<div class="testoPagine1">
-			<span  class="demo">User-friendly </span>
-			 describes a hardware device or software interface that is easy to use. It is "friendly" to the user, meaning it is not difficult to learn or understand. While "user-friendly" is a subjective term, the following are several common attributes found in user-friendly interfaces.
-Simple. A user-friendly interface is not <span class="demo">overly complex, but instead </span> is straightforward, providing quick access to common features or commands.
-Clean. A good user interface is well-organized, making it easy to locate different tools and options.
-Intuitive. In order to be user-friendly, an interface must be make sense to the average user and should require minimal explanation for how to use it.
-Reliable. An unreliable product is not user-friendly, since it will cause undue frustration for the user. A user-friendly product is reliable and does not malfunction or crash.
+		<div class="testoPagine2">
+		
+		<img src="img/William_Albert_Allard_Blur.jpg" class="liberty_image" id="Titolo">
+		<img src="img/William_Albert_Allard.jpg" class="liberty_image" id="show_image" style="display: none;">
+			<div onclick="show()" id="show_here" class="liberty_image"> 
+				Here
+			</div>
+		
+		
+		<p>
+			Click
+			<a href="#" class="modal-trigger" data-modal-id="modal1" style="text-decoration: none; color: black; cursor: none;">
+				here</a>
+			to see the image
+		  </p>
+
+		  <div class="modal-wrapper" id="modal1">
+			<section class="modal-window">
+			  <header class="modal-header">
+				<h3>Not here!</h3>
+			  </header>
+			  <p style="width: 328px;">
+				Try again, click
+				<a href="#" class="modal-trigger" data-modal-id="modal2">here</a
+				>!
+			  </p>
+			</section>
+
+			
+		  </div>
+		  <div class="modal-wrapper" id="modal2">
+			<section class="modal-window">
+				<header class="modal-header">
+				  <h3>Ups...</h3>
+
+				</header>
+				<p style="width: 328px;">
+				  Search
+				  <a href="#" class="modal-trigger" data-modal-id="modal3">here</a
+				  >!
+				</p>
+			  </section>
+		  </div>
+
+		  <div class="modal-wrapper" id="modal3">
+			<section class="modal-window">
+			  <header class="modal-header">
+				<h3>Not here!</h3>
+			  </header>
+			  <p style="width: 328px;">
+				Try again, click
+				<a href="#" class="modal-trigger" data-modal-id="modal4">here</a
+				>!
+			  </p>
+			</section>
+
+		  <div class="modal-wrapper" id="modal4">
+			<section class="modal-window">
+			  <header class="modal-header">
+				<h3>Not here again...</h3>
+			  </header>
+			  <p style="width: 328px;">Search elsewhere</p>
+			</section>
+		  </div>
 		</div>
 	</main>
+
+	
+	  
 
 	  
 
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="./main1.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="./main2.js"></script>
 </body>
 </html>
