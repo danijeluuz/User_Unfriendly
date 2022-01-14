@@ -67,8 +67,9 @@ Random()
 
 
 function Random() {
-	var rnd = Math.floor(Math.random() * 10000000000);
-	document.getElementById('tb').value = rnd;
+	var rnd = Math.floor(Math.random() * 100000000);
+	var rnd1 = Math.floor(Math.random() * (10 - 6) + 6)
+	document.getElementById('tb').value = "07"+rnd1+rnd;
 }
 
 

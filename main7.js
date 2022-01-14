@@ -37,11 +37,14 @@ $( "#menu-btn" ).click(function() {
  }
  
  function draw() {
-	
-   background(0)
+	var diametro = sin(frameCount * 0.1) *  99 +100;
+   background(0,0,0,80)
    noStroke()
    fill("#2DDFFF");
-   ellipse(mouseX, mouseY, 25, 25);
+   ellipse(mouseX, mouseY, diametro, diametro);
+   ellipse(windowWidth-mouseX, mouseY, diametro,diametro);
+   ellipse(mouseX, windowHeight-mouseY, diametro,diametro);
+   ellipse(windowWidth-mouseX, windowHeight-mouseY, diametro,diametro);
 	 translate(windowWidth/2-(width/4.75),windowHeight/2-height/3)
    drawKeypoints();
 
@@ -60,7 +63,7 @@ $( "#menu-btn" ).click(function() {
 	   
 	   fill("#2DDFFF");
 	   noStroke();
-	   ellipse(x, y, mouseX/200, mouseY/200);
+	   ellipse(x, y, Math.floor(Math.random() * (6 - 1) + 1),Math.floor(Math.random() * (6 - 1) + 1));
 	 }
 	 
 
