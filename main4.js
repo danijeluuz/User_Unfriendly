@@ -80,7 +80,7 @@ function drawKeypoints() {
       if (keypoint.score > 0) {
         if (keypoint.part == "nose") {
         fill("red")
-        ellipse(keypoint.position.x, keypoint.position.y, 70, 70);      
+        ellipse(keypoint.position.x, keypoint.position.y, 70,70);      
    }
         noStroke();
       }
